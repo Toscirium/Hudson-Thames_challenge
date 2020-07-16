@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 
 #download the data using yfinance
 
+#change the path to the file
+
 data = [line.strip() for line in open('/home/luka/machine-learning/challenge/challenge_stocks.txt', 'r')]
 
 print(data)
@@ -27,6 +29,8 @@ def get_historical_data():
 
 		except:
 			pass
+		
+		#change the path to the file
 
 		dataset.to_csv(os.path.join('/home/luka/machine-learning/challenge/data/', input_stock + '.csv'))
 
